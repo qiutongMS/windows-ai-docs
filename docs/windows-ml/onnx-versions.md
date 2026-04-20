@@ -8,7 +8,10 @@ keywords: windows 10, windows ai, windows ml, winml, windows machine learning, o
 
 # ONNX versions and Windows builds
 
-Windows Machine Learning supports specific versions of the ONNX format in released Windows builds. In order for your model to work with Windows ML, you will need to make sure your ONNX model version is supported for the Windows release targeted by your application.
+> [!IMPORTANT]
+> For the latest documentation about Windows Machine Learning, see [ONNX versions](/windows/ai/new-windows-ml/onnx-versions). That documentation describes APIs that are in the **Microsoft.Windows.AI.MachineLearning** namespace, which ships in the Windows App SDK. Those APIs supersede the ones documented here, which are in the **Windows.AI.MachineLearning** namespace, and were shipped in 2018.
+
+Windows Machine Learning supports specific versions of the ONNX format in released Windows builds.In order for your model to work with Windows ML, you will need to make sure your ONNX model version is supported for the Windows release targeted by your application.
 
 The below table summarizes all currently released versions of Windows ML and the corresponding ONNX versions supported.
 

@@ -8,6 +8,9 @@ keywords: windows 10, windows ai, windows ml, winml, windows machine learning
 
 # Integrate a model into your app with Windows ML
 
+> [!IMPORTANT]
+> For the latest documentation about Windows Machine Learning, see [Run ONNX models](/windows/ai/new-windows-ml/run-onnx-models). That documentation describes APIs that are in the **Microsoft.Windows.AI.MachineLearning** namespace, which ships in the Windows App SDK. Those APIs supersede the ones documented here, which are in the **Windows.AI.MachineLearning** namespace, and were shipped in 2018.
+
 In this guide, we'll cover how to use the Windows ML APIs to integrate a model into your Windows app. Alternatively, if you'd like to use Windows ML's automatic code generator, check out [mlgen](mlgen.md).
 
 > **Important APIs**: [Windows.AI.MachineLearning](/uwp/api/windows.ai.machinelearning)

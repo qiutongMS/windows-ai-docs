@@ -8,6 +8,9 @@ keywords: windows 10, windows ai, windows ml, winml, windows machine learning
 
 # Create a session
 
+> [!IMPORTANT]
+> For the latest documentation about Windows Machine Learning, see [Run ONNX models](/windows/ai/new-windows-ml/run-onnx-models). That documentation describes APIs that are in the **Microsoft.Windows.AI.MachineLearning** namespace, which ships in the Windows App SDK. Those APIs supersede the ones documented here, which are in the **Windows.AI.MachineLearning** namespace, and were shipped in 2018.
+
 Once you load a [LearningModel](/uwp/api/windows.ai.machinelearning.learningmodel), you create a [LearningModelSession](/uwp/api/windows.ai.machinelearning.learningmodelsession), which binds the model to a device that runs and evaluates the model.
 
 ## Choose a device

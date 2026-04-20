@@ -9,7 +9,10 @@ ms.custom: RS5
 
 # Windows Machine Learning tutorials
 
-Windows Machine Learning can be used in a variety of customizeable app solutions. Here, we provide several full tutorials covering how to create a Machine Learning model from a variety of potential non-code or programmatic services, and integrate them into a basic Windows ML app. In addition, we cover several advanced methods to tweak the functionality of your app. And if you're looking for just a basic introductory use of the APIs with an existing model, or if you want to check out our samples, check out further links below.
+> [!IMPORTANT]
+> For the latest documentation about Windows Machine Learning, see [Windows ML walkthrough](/windows/ai/new-windows-ml/tutorial). That documentation describes APIs that are in the **Microsoft.Windows.AI.MachineLearning** namespace, which ships in the Windows App SDK. Those APIs supersede the ones documented here, which are in the **Windows.AI.MachineLearning** namespace, and were shipped in 2018.
+
+Windows Machine Learning can be used in a variety of customizeable app solutions.Here, we provide several full tutorials covering how to create a Machine Learning model from a variety of potential non-code or programmatic services, and integrate them into a basic Windows ML app. In addition, we cover several advanced methods to tweak the functionality of your app. And if you're looking for just a basic introductory use of the APIs with an existing model, or if you want to check out our samples, check out further links below.
 
 ## Full app tutorials
 

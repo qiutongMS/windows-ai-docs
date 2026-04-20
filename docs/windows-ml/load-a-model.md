@@ -9,6 +9,9 @@ keywords: windows 10, windows ai, windows ml, winml, windows machine learning
 # Load a model
 
 > [!IMPORTANT]
+> For the latest documentation about Windows Machine Learning, see [Run ONNX models](/windows/ai/new-windows-ml/run-onnx-models). That documentation describes APIs that are in the **Microsoft.Windows.AI.MachineLearning** namespace, which ships in the Windows App SDK. Those APIs supersede the ones documented here, which are in the **Windows.AI.MachineLearning** namespace, and were shipped in 2018.
+
+> [!IMPORTANT]
 > Windows Machine Learning requires ONNX models, version 1.2 or higher.
 
 Once you [get a trained ONNX model](get-onnx-model.md), you'll distribute the .onnx model file(s) with your app. You can include the .onnx file(s) in your APPX package, or, for desktop apps, they can be anywhere your app can access on the hard drive.

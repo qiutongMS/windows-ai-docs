@@ -8,6 +8,9 @@ keywords: windows 10, windows ai, windows ml, winml, windows machine learning
 
 # Bind a model
 
+> [!IMPORTANT]
+> For the latest documentation about Windows Machine Learning, see [Run ONNX models](/windows/ai/new-windows-ml/run-onnx-models). That documentation describes APIs that are in the **Microsoft.Windows.AI.MachineLearning** namespace, which ships in the Windows App SDK. Those APIs supersede the ones documented here, which are in the **Windows.AI.MachineLearning** namespace, and were shipped in 2018.
+
 A machine learning model has input and output features, which pass information into and out of the model.
 
 After you load your model as a [LearningModel](/uwp/api/windows.ai.machinelearning.learningmodel), you can use [LearningModel.InputFeatures](/uwp/api/windows.ai.machinelearning.learningmodel.inputfeatures) and [LearningModel.OutputFeatures](/uwp/api/windows.ai.machinelearning.learningmodel.outputfeatures) to get [ILearningModelFeatureDescriptor](/uwp/api/windows.ai.machinelearning.ilearningmodelfeaturedescriptor) objects. These list the model's expected input and output feature types.

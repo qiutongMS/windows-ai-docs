@@ -8,6 +8,9 @@ keywords: windows 10, windows ai, windows ml, winml, windows machine learning, p
 
 # Train a model with PyTorch and export to ONNX
 
+> [!IMPORTANT]
+> For the latest documentation about Windows Machine Learning, see [Find or train models](/windows/ai/new-windows-ml/models). That documentation describes APIs that are in the **Microsoft.Windows.AI.MachineLearning** namespace, which ships in the Windows App SDK. Those APIs supersede the ones documented here, which are in the **Windows.AI.MachineLearning** namespace, and were shipped in 2018.
+
 With the [PyTorch](https://pytorch.org/) framework and [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning-service/), you can train a model in the cloud and download it as an ONNX file to run locally with Windows Machine Learning.
 
 ## Train the model

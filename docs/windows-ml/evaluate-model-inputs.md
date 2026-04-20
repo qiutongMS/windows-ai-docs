@@ -8,6 +8,9 @@ keywords: windows 10, windows ai, windows ml, winml, windows machine learning
 
 # Evaluate the model inputs
 
+> [!IMPORTANT]
+> For the latest documentation about Windows Machine Learning, see [Run ONNX models](/windows/ai/new-windows-ml/run-onnx-models). That documentation describes APIs that are in the **Microsoft.Windows.AI.MachineLearning** namespace, which ships in the Windows App SDK. Those APIs supersede the ones documented here, which are in the **Windows.AI.MachineLearning** namespace, and were shipped in 2018.
+
 Once you have bound values to a model's inputs and outputs, you are ready to evaluate the model's inputs and get its predictions.
 
 To run the model, you call any of the **Evaluate*** methods on your [LearningModelSession](/uwp/api/windows.ai.machinelearning.learningmodelsession). You can use the [LearningModelEvaluationResult](/uwp/api/windows.ai.machinelearning.learningmodelevaluationresult) to look at the output features.

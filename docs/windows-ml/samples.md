@@ -9,6 +9,9 @@ ROBOTS: NOFOLLOW, NOINDEX
 
 # Windows Machine Learning samples
 
+> [!IMPORTANT]
+> For the latest documentation about Windows Machine Learning, see [Samples](/windows/ai/new-windows-ml/samples). That documentation describes APIs that are in the **Microsoft.Windows.AI.MachineLearning** namespace, which ships in the Windows App SDK. Those APIs supersede the ones documented here, which are in the **Windows.AI.MachineLearning** namespace, and were shipped in 2018.
+
 The [Windows-Machine-Learning repository on GitHub](https://github.com/Microsoft/Windows-Machine-Learning) contains sample applications that demonstrate how to use Windows Machine Learning, as well as tools that help verify models and troubleshoot issues during development.
 
 ## Samples

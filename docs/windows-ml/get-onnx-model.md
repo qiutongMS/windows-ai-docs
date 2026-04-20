@@ -8,7 +8,10 @@ keywords: windows 10, windows ai, windows ml, winml, windows machine learning, o
 
 # ONNX models
 
-Windows Machine Learning supports models in the [Open Neural Network Exchange (ONNX)](https://onnx.ai/) format. ONNX is an open format for ML models, allowing you to interchange models between various [ML frameworks and tools](https://onnx.ai/supported-tools).
+> [!IMPORTANT]
+> For the latest documentation about Windows Machine Learning, see [Find or train models](/windows/ai/new-windows-ml/models). That documentation describes APIs that are in the **Microsoft.Windows.AI.MachineLearning** namespace, which ships in the Windows App SDK. Those APIs supersede the ones documented here, which are in the **Windows.AI.MachineLearning** namespace, and were shipped in 2018.
+
+Windows Machine Learning supports models in the [Open Neural Network Exchange (ONNX)](https://onnx.ai/) format.ONNX is an open format for ML models, allowing you to interchange models between various [ML frameworks and tools](https://onnx.ai/supported-tools).
 
 There are several ways in which you can obtain a model in the ONNX format, including:
 
