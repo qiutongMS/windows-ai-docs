@@ -28,7 +28,7 @@ The following list provides a glossary of key terms related to Text Recognition 
 | **Image Input** | A bitmap or image frame provided to the OCR API for text recognition. |
 | **Inference** | The process of running the OCR model locally to detect and recognize text in an image. |
 | **Local Model** | An AI model that runs directly on the user's device rather than on the cloud. Text Recognition (OCR) model in this document operates entirely on-device for speed, privacy, and reliability. |
-| **NPU (Neural Processing Unit)** | A specialized chip designed to speed up AI workloads while using less power than a CPU or GPU. Phi Silica is optimized to run efficiently on Windows devices with NPUs. |
+| **NPU (Neural Processing Unit)** | A specialized chip designed to speed up AI workloads while using less power than a CPU or GPU. Text Recognition (OCR) is optimized to run efficiently on Windows devices with NPUs. |
 | **Optical Character Recognition (OCR)** | A computer vision technique that detects and converts text within images into machine-readable text. |
 | **Recognized Text** | The textual output produced by the OCR system, typically grouped into lines or words. |
 | **Text Line** | A sequence of recognized characters grouped together based on layout and proximity. |
