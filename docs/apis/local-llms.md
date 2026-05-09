@@ -16,7 +16,7 @@ Your app can effortlessly use the following local LLMs in less than an hour. Dis
 | &nbsp; | What is it | Supported devices | Docs |
 |--|--|--|--|
 | **Phi Silica** | The same on-device LLM that inbox Windows experiences use | Copilot+ PCs (NPU) | [Learn more](./phi-silica.md) |
-| **20+ open-source LLMs** | Choose from [over 20+ available OSS LLM models](https://www.foundrylocal.ai/models) | Windows 10+<br/><br/>*(Performance varies, not all models available on all devices)* | [Learn more](../foundry-local/get-started.md)
+| **20+ open-source LLMs** | Choose from [20+ available OSS LLM models](https://www.foundrylocal.ai/models) | Windows 10+<br/><br/>*(Performance varies, not all models available on all devices)* | [Learn more](../foundry-local/get-started.md)
 
 ## Fine-tune local LLMs
 
