@@ -65,12 +65,12 @@ if (ImageObjectExtractor.GetReadyState() == AIFeatureReadyState.NotReady)
 
 ImageObjectExtractor imageObjectExtractor = await ImageObjectExtractor.CreateWithSoftwareBitmapAsync(softwareBitmap);
 
-ImageObjectExtractorHint hint = new ImageObjectExtractorHint{
+ImageObjectExtractorHint hint = new ImageObjectExtractorHint(
     includeRects: null, 
     includePoints:
         new List<PointInt32> { new PointInt32(306, 212),
                                new PointInt32(216, 336)},
-    excludePoints: null};
+    excludePoints: null);
 SoftwareBitmap finalImage = imageObjectExtractor.GetSoftwareBitmapObjectMask(hint);
 ```
 
@@ -113,7 +113,7 @@ Windows::Graphics::Imaging::SoftwareBitmap finalImage = imageObjectExtractor.Get
 This code snippet demonstrates how to use both included and excluded points as hints.
 
 ```csharp
-ImageObjectExtractorHint hint(
+ImageObjectExtractorHint hint = new ImageObjectExtractorHint(
     includeRects: null,
     includePoints: 
         new List<PointInt32> { new PointInt32(150, 90), 
@@ -142,11 +142,11 @@ ImageObjectExtractorHint hint(
 This code snippet demonstrates how to use a rectangle (RectInt32 is `X, Y, Width, Height`) as a hint.
 
 ```csharp
-ImageObjectExtractorHint hint(
+ImageObjectExtractorHint hint = new ImageObjectExtractorHint(
     includeRects: 
         new List<RectInt32> {new RectInt32(370, 278, 285, 126)},
     includePoints: null,
-    excludePoints: null ); 
+    excludePoints: null);
 ```
 
 ```cppwinrt

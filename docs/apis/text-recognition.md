@@ -205,11 +205,11 @@ public void VisualizeWordBoundariesOnGrid(
             polygon.Points = points;
             polygon.StrokeThickness = 2;
 
-            if (word.Confidence < 0.33)
+            if (word.MatchConfidence < 0.33)
             {
                 polygon.Stroke = redBrush;
             }
-            else if (word.Confidence < 0.67)
+            else if (word.MatchConfidence < 0.67)
             {
                 polygon.Stroke = yellowBrush;
             }

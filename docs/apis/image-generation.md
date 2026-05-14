@@ -258,8 +258,8 @@ public async Task CreateImageFromPromptAndCustomOptions()
     options.Creativity = 0.8;
     options.Seed = 1234;
     ContentFilterOptions contentFilterOptions = new ContentFilterOptions();
-    contentFilterOptions.PromptMaxAllowedSeverityLevel = TextContentFilterSeverity(SeverityLevel.Low);
-    contentFilterOptions.ImageMaxAllowedSeverityLevel = ImageContentFilterSeverity(SeverityLevel.Minimium);
+    contentFilterOptions.PromptMaxAllowedSeverityLevel = new TextContentFilterSeverity(SeverityLevel.Low);
+    contentFilterOptions.ImageMaxAllowedSeverityLevel = new ImageContentFilterSeverity(SeverityLevel.Minimum);
     options.ContentFilterOptions = contentFilterOptions;
 
     var result = model.GenerateImageFromTextPrompt("Cat in spaceship", options);

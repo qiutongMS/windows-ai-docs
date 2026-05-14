@@ -299,7 +299,7 @@ The following snippet shows how to check for model availability and generate a r
         {
             OutputText.Text = "Loading..";
 
-            if (LanguageModel.GetReadyState() == AIFeatureReadyState.EnsureNeeded)
+            if (LanguageModel.GetReadyState() == AIFeatureReadyState.NotReady)
             {
                 var result = await LanguageModel.EnsureReadyAsync();
                 if (result.Status != PackageDeploymentStatus.CompletedSuccess)
@@ -351,7 +351,7 @@ The following snippet shows how to check for model availability and generate a r
         {
             OutputText.Text = "Loading..";
 
-            if (LanguageModel.GetReadyState() == AIFeatureReadyState.EnsureNeeded)
+            if (LanguageModel.GetReadyState() == AIFeatureReadyState.NotReady)
             {
                 var result = await LanguageModel.EnsureReadyAsync();
                 if (result.Status != PackageDeploymentStatus.CompletedSuccess)
@@ -398,7 +398,7 @@ The following snippet shows how to check for model availability and generate a r
         {
             OutputLabel.Text = "Loading..";
 
-            if (LanguageModel.GetReadyState() == AIFeatureReadyState.EnsureNeeded)
+            if (LanguageModel.GetReadyState() == AIFeatureReadyState.NotReady)
             {
                 var result = await LanguageModel.EnsureReadyAsync();
                 if (result.Status != PackageDeploymentStatus.CompletedSuccess)

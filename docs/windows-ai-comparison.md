@@ -48,7 +48,7 @@ These options aren't mutually exclusive. A typical pattern for a resilient AI fe
 ```csharp
 // 1. Try Windows AI APIs (fastest — Copilot+ only)
 var readyState = LanguageModel.GetReadyState();
-if (readyState == AIFeatureReadyState.EnsureNeeded)
+if (readyState == AIFeatureReadyState.NotReady)
 {
     var deploymentResult = await LanguageModel.EnsureReadyAsync();
     if (deploymentResult.Status == PackageDeploymentStatus.CompletedSuccess)
