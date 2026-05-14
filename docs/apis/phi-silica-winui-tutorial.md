@@ -250,33 +250,6 @@ public sealed partial class MainWindow : Window
         }
     }
 
-        if (readyState == AIFeatureReadyState.NotReady)
-        {
-            StatusText.Text = "Model not ready — installing. This may take a few minutes...";
-            var ensureResult = await LanguageModel.EnsureReadyAsync();
-
-            if (ensureResult.ExtendedError != null)
-            {
-                StatusText.Text = $"Model installation failed: {ensureResult.ExtendedError.Message}";
-                return;
-            }
-        }
-        else if (readyState == AIFeatureReadyState.NotSupportedOnCurrentSystem)
-        {
-            // This device does not have a compatible NPU or is not a Copilot+ PC.
-            // Consider falling back to Foundry Local or an Azure OpenAI endpoint.
-            StatusText.Text = "Phi Silica is not supported on this device. A Copilot+ PC is required.";
-            ResponseText.Text = "Phi Silica requires a Copilot+ PC with an NPU.\n\n" +
-                                 "For on-device AI on any Windows PC, see Foundry Local:\n" +
-                                 "https://learn.microsoft.com/windows/ai/foundry-local/get-started";
-            return;
-        }
-
-        _languageModel = await LanguageModel.CreateAsync();
-        StatusText.Text = "Model ready.";
-        SendButton.IsEnabled = true;
-    }
-
     private async void OnSendClicked(object sender, RoutedEventArgs e)
     {
         if (_languageModel is null) return;
@@ -383,10 +356,10 @@ Phi Silica is a Limited Access Feature. Before building, replace the placeholder
 ## Troubleshooting
 
 **Status shows "not supported on this device"**  
-Your PC either isn't a Copilot+ PC or doesn't meet the minimum Windows version (build 26200+). Check `winver` and confirm your device has an NPU.
+Your PC either isn't a Copilot+ PC or doesn't meet the minimum Windows version (build 26100+). Check `winver` and confirm your device has an NPU.
 
 **Build error: namespace not found**  
-Confirm `Microsoft.WindowsAppSDK` `1.8.250410001-experimental1` (or later) is installed and the build is set to **ARM64** (not x64 or AnyCPU).
+Confirm `Microsoft.WindowsAppSDK` `2.0.0-preview1` (or later) is installed and the build is set to **ARM64** (not x64 or AnyCPU).
 
 **API returns access denied / E_ACCESSDENIED**  
 The Phi Silica API requires a Limited Access Feature unlock token. Request one at the [LAF Access Token Request Form](https://go.microsoft.com/fwlink/?linkid=2271232&c1cid=04x409). The token must be registered before calls will succeed.
